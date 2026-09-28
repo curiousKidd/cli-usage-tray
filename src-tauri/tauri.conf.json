@@ -1,0 +1,31 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "digimon-adventure-clone",
+  "identifier": "com.digimon.adventure-clone",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "devUrl": "http://localhost:1420",
+    "beforeBuildCommand": "npm run build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "macOSPrivateApi": true,
+    "windows": [{
+      "label": "float",
+      "title": "Digimon Adventure",
+      "url": "index.html#/float",
+      "width": 360,
+      "height": 520,
+      "decorations": false,
+      "resizable": false,
+      "skipTaskbar": true,
+      "alwaysOnTop": true,
+      "transparent": true,
+      "visible": false
+    }]
+  },
+  "bundle": {
+    "active": true,
+    "targets": ["app"]
+  }
+}

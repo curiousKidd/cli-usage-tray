@@ -1,0 +1,14 @@
+# Rust / Tauri build artifacts
+/src-tauri/target/
+/src-tauri/gen/
+
+# Frontend build artifacts / deps
+/node_modules/
+/dist/
+
+# Internal working docs — contain researcher's local paths and other project names
+/_workspace/
+/docs/
+
+# OS cruft
+.DS_Store
