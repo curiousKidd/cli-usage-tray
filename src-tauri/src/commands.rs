@@ -123,7 +123,7 @@ pub fn scale_options() -> Vec<f64> { vec![0.8, 0.9, 1.0, 1.1, 1.25] }
 #[tauri::command]
 pub fn open_log_dir() -> Result<(), String> {
     let path = std::env::var_os("HOME").map(PathBuf::from).unwrap_or_default()
-        .join("Library/Logs/com.digimon.adventure-clone");
+        .join("Library/Logs/com.digimon.adventure");
     Command::new("open").arg(path).spawn().map(|_| ()).map_err(|error| error.to_string())
 }
 
